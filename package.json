@@ -1,0 +1,28 @@
+{
+  "name": "skindle-api",
+  "version": "1.0.0",
+  "description": "API de conversão de artigos web em epub e envio ao kindle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WirisWernek/skindle-api.git"
+  },
+  "keywords": [
+    "kindle", 
+    "epub",
+    "converter",
+    "api",
+    "articles",
+    "medium",
+    "dev.to"
+  ],
+  "author": "Wiris Wernek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WirisWernek/skindle-api/issues"
+  },
+  "homepage": "https://github.com/WirisWernek/skindle-api#readme"
+}
