@@ -2,16 +2,18 @@
   "name": "skindle-api",
   "version": "1.0.0",
   "description": "API de conversão de artigos web em epub e envio ao kindle",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/WirisWernek/skindle-api.git"
   },
   "keywords": [
-    "kindle", 
+    "kindle",
     "epub",
     "converter",
     "api",
@@ -24,5 +26,21 @@
   "bugs": {
     "url": "https://github.com/WirisWernek/skindle-api/issues"
   },
-  "homepage": "https://github.com/WirisWernek/skindle-api#readme"
+  "homepage": "https://github.com/WirisWernek/skindle-api#readme",
+  "devDependencies": {
+    "@types/epub-gen": "^0.1.2",
+    "@types/express": "^5.0.1",
+    "@types/got": "^9.6.12",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.15.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "epub-gen": "^0.1.0",
+    "express": "^5.1.0",
+    "got": "^14.4.7",
+    "jsdom": "^26.1.0"
+  }
 }
